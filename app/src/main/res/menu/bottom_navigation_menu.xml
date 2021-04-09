@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/page_album"
+            android:enabled="true"
+            android:icon="@drawable/ic_album"
+            android:title="Álbum"/>
+    <item
+            android:id="@+id/page_retos"
+            android:enabled="true"
+            android:icon="@drawable/ic_challenge"
+            android:title="Retos"/>
+    <item
+            android:id="@+id/page_inicio"
+            android:enabled="true"
+            android:icon="@drawable/ic_inicio"
+            android:title="Álbum"/>
+    <item
+            android:id="@+id/page_rango"
+            android:enabled="true"
+            android:icon="@drawable/ic_configure"
+            android:title="Ranking"/>
+    <item
+            android:id="@+id/page_perfil"
+            android:enabled="true"
+            android:icon="@drawable/ic_profile"
+            android:title="Perfil"/>
+
+</menu>

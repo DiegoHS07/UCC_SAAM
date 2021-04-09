@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="30dp"
+            android:padding="10dp" android:id="@+id/linearLayout" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:id="@+id/imageView" android:layout_weight="1" android:layout_gravity="center"/>
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_gravity="center" android:layout_weight="1">
+                <TextView
+                        android:text="Diego Alejandro Higuera Sierra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/usuario_name"
+                        android:gravity="center" android:textStyle="bold" android:layout_gravity="center"
+                        android:textColor="@color/textColor" android:fontFamily="sans-serif-light"/>
+
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                            android:id="@+id/progress_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:layout_gravity="center"
+                            android:gravity="center" android:layout_marginLeft="5dp" android:padding="8dp">
+                        <ProgressBar
+                                android:progressDrawable="@drawable/progress_drawable"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/usuario_exp_progressBar" android:paddingLeft="5dp"
+                                android:paddingRight="5dp" android:max="100" android:progress="80"
+                                android:layout_gravity="center"/>
+                        <TextView
+                                android:text="235/350"
+                                android:background="@color/ic_launcher_saam_background"
+                                android:layout_alignLeft="@id/usuario_exp_progressBar"
+                                android:layout_alignTop="@id/usuario_exp_progressBar"
+                                android:layout_alignRight="@id/usuario_exp_progressBar"
+                                android:layout_alignBottom="@id/usuario_exp_progressBar"
+                                android:layout_height="match_parent" android:layout_width="wrap_content"
+                                android:layout_alignStart="@id/usuario_exp_progressBar"
+                                android:layout_alignEnd="@id/usuario_exp_progressBar"
+                                android:textColor="@color/textColor" android:textSize="12sp"
+                                android:gravity="center"/>
+                    </RelativeLayout>
+                    <TextView
+                            android:text="3"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/ic_estrella"
+                            android:layout_alignLeft="@id/progress_layout"
+                            android:layout_alignTop="@id/progress_layout"
+                            android:layout_alignBottom="@id/progress_layout"
+                            android:layout_alignStart="@id/progress_layout"
+                            android:textColor="@color/textColor" android:textStyle="bold" android:gravity="center"
+                            android:textSize="12sp" android:id="@+id/usuario_level" android:layout_marginLeft="-5dp"
+                            android:layout_marginTop="0dp" android:layout_marginBottom="0dp"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/usuario_image"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_profile"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="1dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="@color/colorPrimary"
+                    app:civ_shadow_radius="1dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/scrollView" app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:padding="15dp">
+                <TextView
+                        android:text="Mis Retos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="24sp"
+                        android:textStyle="bold" android:textColor="@color/textColor"
+                        android:fontFamily="sans-serif-light" android:layout_marginBottom="10dp"/>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/colorSecond"
+                        android:orientation="horizontal" android:layout_marginBottom="10dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/misRetosRecyclerView"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:padding="15dp">
+                <TextView
+                        android:text="Retos Populares"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView2" android:textStyle="bold"
+                        android:textSize="24sp" android:textColor="@color/textColor"
+                        android:fontFamily="sans-serif-light" android:layout_marginBottom="10dp"/>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/colorSecond"
+                        android:orientation="horizontal" android:layout_marginBottom="10dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/retosPopularesRecyclerView"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_navigation_menu"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

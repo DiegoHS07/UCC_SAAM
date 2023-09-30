@@ -1,2 +1,10 @@
 # SAAM: Sensibilizate, apoya y ayuda al mundo.
-Aplicación caritativa, ayuda a las personas a realizar voluntariados, enviar donativos y apoyar eventos de diferentes entidades.
+Se plantea la idea de desarrollar una aplicación móvil, que sirva de herramienta a las entidades sin ánimo de lucro para facilitar la consecución de los recursos
+necesarios para brindar un servicio especializado, a las diferentes partes de la sociedad que más lo necesitan, ya que muchas veces dichas entidades no cuentan
+con la suficiente ayuda para poder subsistir. Se propone que la aplicación sea un puente entre las personas que quieran donar (jugadores) y que muchas veces no saben dónde pueden hacerlo, y las organizaciones, donde estas últimas plantearan los retos con base en las necesidades que se tengan y los jugadores podrán escoger a que grupo de la población desean ayudar, por ejemplo, con elementos de aseo, comida, juguetes o en dado caso que la entidad lo requiera, visitas, ya sea a comedores comunitarios entre Otros. En la aplicación se tendrá un módulo que corresponde al ranking, compuesto por un listado o llamado tabla de clasificación, en la cual se mostrará un registro de todos los jugadores y la cantidad acumulada de puntos, los cuales se otorgaron por cumplir retos de la aplicación, de esta manera se podrá observar cuales fueron los usuarios que más aportaron en un semestre. Esto con el fin de que las personas se incentiven a donar y que empresas externas a la aplicación brinden recompensas a los jugadores más activos. También un álbum de fotos en el que las personas podrán ver que sus donaciones si están siendo usadas y contribuya a incentivar más a los jugadores. Se busca con esta idea que la sociedad tome conciencia de la importancia de ayudar a las personas que lo necesitan, además de que las distintas organizaciones obtengan los recursos suficientes para seguir prestando esa gran labor y no se vean obligadas a cerrar por la falta de estos. Todo esto usando herramientas que hoy en día tenemos y aportar nuestro grano de arena por medio de la tecnología a aportar a la solución de problemáticas que afectan nuestra sociedad.
+
+## Palabras clave
+Sociedad , Caridad , Donación
+
+## URL Universidad Cooperativa
+https://repository.ucc.edu.co/handle/20.500.12494/48736
